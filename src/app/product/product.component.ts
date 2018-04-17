@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ProductComponent implements OnInit {
 
   private products: Array<Product>;
+  private imgUrl = 'http://placehold.it/320x150';
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  // 组件实例化方法，钩子函数
     this.products = [
       new Product(1, '第一个商品', 1.99, 3.5, '这是第一个商品', ['电子商品', '硬件设备']),
       new Product(2, '第二个商品', 1.99, 2.5, '这是第二个商品', ['电子商品']),
